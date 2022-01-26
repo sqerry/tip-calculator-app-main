@@ -1,0 +1,108 @@
+.calculator{
+  margin: 3rem 0;
+  background: $white;
+  border-radius: 20px;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  &__input{
+    width: 300px;
+    padding-right: 40px;
+    h4{
+      color: $dark-grayish;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+    .h4-people.alert:after{
+      content: "Can't be zero";
+      color: hsl(12deg 71% 80%);
+      float: right;
+    }
+    .selection{
+      grid-template-rows: repeat(2, 1fr);
+      gap: 10px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      display: grid;
+      margin-top: 10px;
+      input::placeholder{
+        color: $dark-grayish;
+        text-align: center;
+    }
+    }
+    .group-control{
+      position: relative;
+      margin-bottom: 15px;
+      .input-icon{
+        width: 9px;
+        position: absolute;
+        left: 8px;
+        bottom: 9px;
+      }
+      input{
+        width: 100%;
+        color: $primary-dark;
+        border: 2px solid transparent;
+        background: $light-grayish-2;
+        text-align: right;
+        padding: 5px;
+        font-size: 16px;
+        font-weight: 700;
+        border-radius: 3px;
+        &:focus{
+
+          outline: none !important;
+          border: 2px solid $primary;
+
+        }
+      }
+    }
+}
+  &__results{
+    background: $primary-dark;
+    border-radius: 10px;
+    width: 300px;
+    padding: 24px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .tip-info{
+      .group-control{
+        line-height: 0.8;
+        display: flex;
+        padding: 15px 0;
+        justify-content: space-between;
+      }
+    }
+    .final-amount{
+      color: $primary;
+      font-size: 32px;
+      font-weight: 700;
+    }
+    .text-information{
+      line-height: 0.8;
+
+      h4{
+        color: $white;
+      }
+      span{
+        color: $dark-grayish-2;
+        font-size: 9px;
+
+      }
+    }
+  }
+}
+
+@media(max-width: 767px){
+  .calculator{
+    flex-direction: column;
+    &__input{
+      padding-right: 0;
+    }
+  }
+}
+@media(max-width: 469px){
+  .calculator__results, .calculator__input{
+    width: 100%;
+  }
+}

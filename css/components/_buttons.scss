@@ -1,0 +1,20 @@
+.btn{
+  background: $primary-dark;
+  padding: 7px 25px;
+  color: $white;
+  border-radius: 5px;
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+  &:hover{
+    background:#9fe8df!important;
+  }
+  &.reset{
+    background: $primary;
+    color: $primary-dark;
+  }
+  &.clicked{
+    background: $primary;
+    color: $primary-dark;
+  }
+}

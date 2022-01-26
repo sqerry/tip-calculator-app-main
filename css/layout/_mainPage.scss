@@ -1,0 +1,12 @@
+.container{
+  min-height: 100vh;
+  background: $light-grayish;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .logo{
+      width: 100%;
+      max-width: 50px;
+  }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+
+<div class="container">
+  <img class = "logo" src="/images/logo.svg" alt="">
+  <div class="calculator">
+    <div class="calculator__input">
+
+      <div class="group-control">
+        <h4>Bill</h4>
+        <input type="text" id="bill">
+        <img class = "input-icon" src="/images/icon-dollar.svg" alt="">
+      </div>
+      <div class="group-control">
+        <h4>Select tip $</h4>
+        <div class="selection">
+          <div class="btn tip-select"> 5%</div>
+          <div class="btn tip-select">10%</div>
+          <div class="btn tip-select">15%</div>
+          <div class="btn tip-select">25%</div>
+          <div class="btn tip-select">50%</div>
+          <input type="text" placeholder="Custom" class = "tip-select">
+        </div>
+      </div>
+      <div class="group-control">
+        <h4 class = "h4-people">Number of People</h4>
+        <input type="text" id = "people">
+        <img class = "input-icon" src="/images/icon-person.svg" alt="">
+      </div>
+
+
+    </div>
+    <div class="calculator__results">
+      <div class="tip-info">
+        <div class="group-control">
+          <div class="text-information">
+            <h4>Tip Amount</h4>
+            <span>/ person</span>
+          </div>
+          <div class="final-amount">
+            <div class="final-amount__result-tip">$0.00</div>
+          </div>
+        </div>
+
+        <div class="group-control">
+          <div class="text-information">
+            <h4>Total</h4>
+            <span>/ person</span>
+          </div>
+          <div class="final-amount">
+            <div class="final-amount__result-total">$0.00</div>
+          </div>
+        </div>
+      </div>
+          <div class="btn reset">Reset</div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/fbb7383d28.js" crossorigin="anonymous"></script>
+</html>
