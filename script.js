@@ -37,6 +37,7 @@ const tipCalculator = () =>{
         resetBtn.addEventListener("click", function (){
             billEl.value = "";
             numPeopleEl.value = "";
+            inputSelect.value = "";
             removeClickedClass();
 
             if(tipEl){
